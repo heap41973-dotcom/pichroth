@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Comatible" content="IE=edge">
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Car Sale Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style1.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loader">
+    <div class="loader-circle"></div>
+    
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Pich Roth</div>
+    <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    <nav id="navMenu">
+      <a href="#home">Home</a>
+      <a href="#music">Music</a>
+      <a href="#videos">Videos</a>
+      <a href="#photos">Photos</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+   <!-- Hero Section -->
+  <section class="home" id="home">
+    <div class="image">
+      <img src="img1/pich.jpg" alt="profile">
+    </div>
+
+    <div class="content">
+      <h1>Hi, It's <span>Pich Roth</span></h1>
+      <h2>I'm a <span class="typing">Developer</span></h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus labore dolores esse.
+        Odit similique doloribus tenetur doloremque.
+      </p>
+
+      <div class="social">
+        <a href="https://www.facebook.com/share/16Y2WKPsaM/?mibextid=wwXIfr"><i class='bx bxl-facebook'></i></a>
+        <a href="https://t.me/rothhattw10"><i class='bx bxl-telegram'></i></a>
+        <a href="https://www.tiktok.com/@maybeyouknow12200"><i class='bx bxl-tiktok'></i></a>
+      </div>
+
+      <button class="btn">Hire me</button>
+    </div>
+  </section>
+
+  <!-- Music Section -->
+  <section id="music">
+    <h2>Music Playlist</h2>
+    <div class="grid music-grid">
+      <div class="card">
+        <h3>Song 1</h3>
+        <p>Sport Mixdown 1</p>
+        <audio controls>
+          <source src="videos/Sport Mixdown 1.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div class="card">
+        <h3>Song 2</h3>
+        <p>Sontaro Master 2</p>
+        <audio controls>
+          <source src="videos/Sontaro Master 2.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+
+      <div class="card">
+        <h3>Song 3</h3>
+        <p>1luv4lie</p>
+        <audio controls>
+          <source src="videos/1luv4lie.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section id="videos">
+    <h2>Video Collection</h2>
+    <div class="videos/video1.mp4">
+      <div class="card">
+        <video controls>
+          <source src="videos/video1.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <h3 style="margin-top:10px;">Local Video 1</h3>
+      </div>
+
+      <div class="card">
+        <video controls>
+          <source src="videos/video2.mp4" type="video/mp4">
+          Your browser does not support video.
+        </video>
+        <h3 style="margin-top:10px;">Local Video 2</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section id="photos">
+    <h2>Photo Gallery</h2>
+    <div class="gallery">
+      <img src="img1/photo_1.jpg" alt="Photo 1" onclick="openLightbox(this.src)">
+      <img src="img1/photo_2.jpg" alt="Photo 2" onclick="openLightbox(this.src)">
+      <img src="img1/photo_3.jpg" alt="Photo 3" onclick="openLightbox(this.src)">
+      <img src="img1/photo_4.jpg" alt="Photo 4" onclick="openLightbox(this.src)">
+      <img src="img1/photo_5.jpg" alt="Photo 5" onclick="openLightbox(this.src)">
+      <img src="img1/photo_6.jpg" alt="Photo 6" onclick="openLightbox(this.src)">
+    </div>
+  </section>
+   <!-- Section -->
+
+  <section class="projects">
+
+    <a href="#" class="back">← Back to Home</a>
+
+    <h1>My Projects</h1>
+
+    <p class="subtitle">នេះជាគម្រោងដែលខ្ញុំបានបង្កើត</p>
+
+    <div class="buttons">
+
+      <a href="guest_phone.html"><button>BBU work1</button></a>
+      <a href="TAS.html"><button>BBU work2</button></a>
+      <a href="elt.html"><button>BBU work3</button></a>
+      <a href="Datatype.html"><button>BBU work4</button></a>
+      <a href="contact.html"><button>BBU work5</button></a>
+      <a href="cla.html"><button>BBU work6</button></a>
+      <a href=""><button>No</button></a>
+
+    </div>
+
+  </section>
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="box">
+      <p>
+        Hello! I am PichRoth. This website is my personal entertainment space where I share my favorite songs,
+        videos, and photo memories. This project is also great for school presentations and web design practice.
+      </p>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact & Social</h2>
+    <div class="box">
+      <p><strong>Name:</strong> PichRoth</p>
+      <p><strong>Email:</strong> yourname@example.com</p>
+      <p><strong>Facebook:</strong> facebook.com/yourprofile</p>
+      <p><strong>Telegram:
+
+      <div class="social-links">
+        <a href="https://www.facebook.com/share/16Y2WKPsaM/?mibextid=wwXIfr"><i class='bx bxl-facebook'></i></a>
+        <a href="https://t.me/rothhattw10"><i class='bx bxl-telegram'></i></a>
+        <a href="https://www.tiktok.com/@maybeyouknow12200"><i class='bx bxl-tiktok'></i></a>
+      </div>
+      
+    </div>
+</body>
+</html>
